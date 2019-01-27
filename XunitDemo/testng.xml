@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="1" preserve-order="true" name="D:/git1/XunitDemo">
+        <classes>
+            <!--<class name="TestXunit.LoginTest">-->
+                <!--<methods>-->
+                    <!--<include name="testLogin"></include>-->
+                <!--</methods>-->
+            <!--</class>-->
+
+            <!--<class name="TestXunit.ShoppingGetPriceTest">-->
+                <!--<methods>-->
+                    <!--<include name="testGetPrice"></include>-->
+                <!--</methods>-->
+            <!--</class>-->
+
+            <class name="TestXunit.ShoppingBuysTest">
+                <methods>
+                    <include name="testGetStatus"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

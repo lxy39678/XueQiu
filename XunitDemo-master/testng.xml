@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="1" preserve-order="true" name="/Users/lixiangyu/project/XunitDemo-master">
+        <groups>
+            <dependencies>
+                <group name="group1" depends-on="">
+                    <classes>
+                        <class name="MyTestXunit.LoginTest">
+                            <methods>
+                                <!--<include name="testUserLogin0"></include>-->
+                                <!--<exclude name="testUserLogin1"></exclude>-->
+                                <!--<include name="testUserLogin2"></include>-->
+                                <!--<include name="testUserLogin3"></include>-->
+                                <!--<parameter name="name" value="zhangsan"></parameter>-->
+                                <!--<parameter name="pwd" value="123456"></parameter>-->
+                                <!--<parameter name="expect" value="欢迎zhangsan"></parameter>-->
+                                <include name="testLogin"></include>
+                            </methods>
+                        </class>
+
+                        <class name="MyTestXunit.ShoppingTest">
+                            <methods>
+                                <include name="testGetPrice"></include>
+                            </methods>
+                        </class>
+                    </classes>
+                </group>
+            </dependencies>
+        </groups>
+    </test>
+</suite>
